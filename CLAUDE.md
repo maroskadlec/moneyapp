@@ -56,12 +56,14 @@ overPace         = avgDailySpend > (budget / totalDays())
 - `moneyapp_expenses` — JSON array `[{ id, amount, date }]`
 
 ## UI styl
-Minimal Monochrome / e-ink estetika:
-- Pozadí: `#f0ede8`, karty: `#ebe7e0`
-- Bordery: `#c4c0b8` / `#d8d4cc`
-- Text: `#1a1917`, muted: `#6b6760`, faint: `#9e9b96`
-- Font: Georgia (serif) + Courier New (mono pro labely)
-- Varování (PaceAlert): `#7a3b00` na `#f2e6d0`
+macOS Glass / Vitreous (zvoleno po testování Minimal Monochrome):
+- Pozadí: gradient `#d8e4f0 → #e8dff0 → #d0e8e0` (fixed)
+- Karty: `rgba(255,255,255,0.55)` + `backdrop-filter: blur(24px)`
+- Bordery: `rgba(255,255,255,0.75)` nahoře, `rgba(0,0,0,0.06)` dole
+- Text: `#1c1c1e`, secondary `#3c3c43cc`, tertiary `#3c3c4399`
+- Akcent: `#007aff` (Apple modrá), destructive `#ff3b30`, warn `#ff9500`
+- Font: `-apple-system, BlinkMacSystemFont, 'SF Pro Display'` (SF Pro na Apple zařízeních)
+- Zaoblení: `--radius: 16px`, `--radius-sm: 10px`
 
 ## Známé věci / rozhodnutí
 - `vite-plugin-pwa` odstraněn — konflikt s Vite 8 a cestou s apostrofem v názvu složky (`Marian'sDevelopment`)
