@@ -1,0 +1,94 @@
+.header {
+  padding: 28px 20px 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 16px;
+}
+
+.label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
+.editBtn {
+  background: none;
+  border: none;
+  font-family: var(--font);
+  font-size: 12px;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 0;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.editBtn:hover {
+  color: var(--text);
+}
+
+.amounts {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.remaining {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.remainingValue {
+  font-size: 36px;
+  font-weight: normal;
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+
+.remainingLabel {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.budget {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+  color: var(--text-faint);
+  font-size: 14px;
+}
+
+.budgetValue {
+  font-size: 14px;
+}
+
+.barWrap {
+  height: 3px;
+  background: var(--border-light);
+  border-radius: 2px;
+  overflow: hidden;
+  margin-bottom: 6px;
+}
+
+.bar {
+  height: 100%;
+  background: var(--text);
+  border-radius: 2px;
+  transition: width 0.4s ease;
+}
+
+.barLabels {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-faint);
+  text-align: right;
+}

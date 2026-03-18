@@ -1,0 +1,51 @@
+.wrap {
+  margin: 20px 20px 0;
+  padding: 14px 0 10px;
+  border: 1px solid var(--border-light);
+  background: var(--bg-card);
+}
+
+.title {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  padding: 0 16px 10px;
+}
+
+.legend {
+  display: flex;
+  gap: 16px;
+  justify-content: flex-end;
+  padding: 6px 16px 0;
+}
+
+.legendIdeal,
+.legendActual {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--text-faint);
+}
+
+.legendActual {
+  color: var(--text-muted);
+}
+
+.tooltip {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  padding: 8px 10px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+}
+
+.tooltipRow {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.tooltipLabel {
+  color: var(--text-faint);
+}

@@ -1,0 +1,94 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+.inner {
+  max-width: 340px;
+}
+
+.appName {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  margin-bottom: 24px;
+}
+
+.heading {
+  font-size: 28px;
+  font-weight: normal;
+  letter-spacing: -0.02em;
+  margin-bottom: 10px;
+}
+
+.sub {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.inputWrap {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--border);
+  background: var(--bg);
+}
+
+.input {
+  flex: 1;
+  padding: 12px 14px;
+  font-family: var(--font);
+  font-size: 22px;
+  background: transparent;
+  border: none;
+  color: var(--text);
+  outline: none;
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.currency {
+  padding: 0 14px;
+  font-size: 16px;
+  color: var(--text-muted);
+  border-left: 1px solid var(--border-light);
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.inputWrap:focus-within {
+  border-color: var(--text);
+}
+
+.btn {
+  padding: 12px 20px;
+  font-family: var(--font);
+  font-size: 15px;
+  background: var(--text);
+  color: var(--bg);
+  border: none;
+  cursor: pointer;
+  letter-spacing: 0.01em;
+}
+
+.btn:hover {
+  background: var(--text-muted);
+}
