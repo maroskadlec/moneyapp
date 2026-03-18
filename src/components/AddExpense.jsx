@@ -25,7 +25,7 @@ export default function AddExpense({ onAdd }) {
           min="0"
           step="any"
         />
-        <button className={styles.btn} type="submit">Přidat výdaj</button>
+        <button className={styles.btn} type="submit">Přidat</button>
       </div>
     </form>
   )

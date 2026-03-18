@@ -18,7 +18,6 @@ export default function Header({ budget, remaining, onEditBudget }) {
       <div className={styles.amounts}>
         <div className={styles.remaining}>
           <span className={styles.remainingValue}>{formatCZK(remaining)}</span>
-          <span className={styles.remainingLabel}>zbývá</span>
         </div>
         <div className={styles.budget}>
           <span className={styles.budgetLabel}>z</span>
