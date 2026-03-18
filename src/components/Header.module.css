@@ -1,13 +1,5 @@
 .header {
-  margin: 20px 16px 0;
-  padding: 22px 20px 20px;
-  background: var(--glass);
-  backdrop-filter: blur(24px);
-  -webkit-backdrop-filter: blur(24px);
-  border-radius: var(--radius);
-  border: 1px solid var(--glass-border);
-  border-bottom-color: var(--glass-border-bottom);
-  box-shadow: var(--glass-shadow);
+  padding: 24px 32px 20px;
 }
 
 .top {
@@ -30,12 +22,11 @@
 .editBtn {
   background: none;
   border: none;
-  font-family: var(--font);
-  font-size: 14px;
-  color: var(--accent);
+  color: var(--text);
   cursor: pointer;
   padding: 0;
-  font-weight: 400;
+  display: flex;
+  align-items: center;
 }
 
 .editBtn:hover {
@@ -86,7 +77,7 @@
 
 .bar {
   height: 100%;
-  background: var(--accent);
+  background: #ffae5d;
   border-radius: 10px;
   transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -96,4 +87,10 @@
   color: var(--text-tertiary);
   text-align: right;
   font-weight: 400;
+}
+
+.divider {
+  height: 1px;
+  background: var(--glass-border);
+  margin: 20px -32px 0;
 }

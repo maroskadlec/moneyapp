@@ -6,14 +6,17 @@
   display: flex;
   gap: 10px;
   background: var(--glass);
-  backdrop-filter: blur(24px);
-  -webkit-backdrop-filter: blur(24px);
   border-radius: var(--radius);
   border: 1px solid var(--glass-border);
-  border-bottom-color: var(--glass-border-bottom);
   box-shadow: var(--glass-shadow-sm);
-  padding: 4px 4px 4px 16px;
+  padding: 10px 10px 10px 32px;
   align-items: center;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.row:focus-within {
+  border-color: var(--text);
+  background: #ffffff;
 }
 
 .input {
@@ -44,7 +47,7 @@
   font-family: var(--font);
   font-size: 15px;
   font-weight: 500;
-  background: var(--accent);
+  background: #1C2129;
   color: #fff;
   border: none;
   border-radius: 12px;
@@ -54,7 +57,7 @@
 }
 
 .btn:hover {
-  background: #0066d6;
+  background: #2e3745;
 }
 
 .btn:active {

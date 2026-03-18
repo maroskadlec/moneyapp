@@ -1,0 +1,7 @@
+.topCard {
+  margin: 20px 16px 0;
+  background: var(--glass);
+  border-radius: var(--radius);
+  border: 1px solid var(--glass-border);
+  overflow: hidden;
+}

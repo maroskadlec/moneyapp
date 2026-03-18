@@ -12,12 +12,10 @@ export default function StatsBar({ dailyBudget, daysLeft, projectedRemaining, qu
         <span className={styles.value}>{formatCZK(dailyBudget)}</span>
         <span className={styles.label}>denní limit</span>
       </div>
-      <div className={styles.divider} />
       <div className={styles.item}>
         <span className={styles.value}>{daysLeft}</span>
         <span className={styles.label}>dní zbývá</span>
       </div>
-      <div className={styles.divider} />
       <div className={styles.item}>
         <span className={`${styles.value} ${projectedRemaining < 0 ? styles.negative : ''}`}>
           {formatCZK(projectedRemaining)}

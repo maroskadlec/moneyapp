@@ -13,13 +13,14 @@ export default function BudgetSetup({ onSet, onCancel }) {
 
   return (
     <div className={styles.wrap}>
+      <div className={styles.aboveCard}>
+        <img src="/icon-192.png" alt="MoneyApp" className={styles.icon} />
+        <div className={styles.appName}>MoneyApp</div>
+      </div>
       <div className={styles.inner}>
-        <div className={styles.top}>
-          <div className={styles.appName}>MoneyApp</div>
-          {onCancel && (
-            <button className={styles.cancelBtn} onClick={onCancel}>← zpět</button>
-          )}
-        </div>
+        {onCancel && (
+          <button className={styles.cancelBtn} onClick={onCancel}>← zpět</button>
+        )}
         <h1 className={styles.heading}>Nastavení budgetu</h1>
         <p className={styles.sub}>
           Zadej celkový budget pro aktuální kvartál<br />

@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import styles from './App.module.css'
 import Header from './components/Header'
 import BudgetSetup from './components/BudgetSetup'
 import StatsBar from './components/StatsBar'
@@ -68,23 +69,24 @@ export default function App() {
 
   return (
     <div>
-      <Header
-        budget={budget}
-        remaining={remaining}
-        onEditBudget={() => setBudget(null)}
-      />
-      <StatsBar
-        dailyBudget={dailyBudget}
-        daysLeft={daysLeft}
-        projectedRemaining={projectedRemaining}
-        quarterEnd={QUARTER_END}
-      />
+      <div className={styles.topCard}>
+        <Header
+          budget={budget}
+          remaining={remaining}
+          onEditBudget={() => setBudget(null)}
+        />
+        <StatsBar
+          dailyBudget={dailyBudget}
+          daysLeft={daysLeft}
+          projectedRemaining={projectedRemaining}
+          quarterEnd={QUARTER_END}
+        />
+      </div>
       {overPace && (
         <PaceAlert avgDailySpend={avgDailySpend} dailyBudget={budget / totalDays()} />
       )}
       <AddExpense onAdd={addExpense} />
-      <TrendChart budget={budget} expenses={expenses} />
-      <ExpenseList expenses={expenses} onDelete={deleteExpense} />
+<ExpenseList expenses={expenses} onDelete={deleteExpense} />
     </div>
   )
 }
