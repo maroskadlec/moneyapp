@@ -57,7 +57,13 @@ export default function App() {
   }
 
   if (budget === null) {
-    return <BudgetSetup onSet={setBudget} />
+    const previousBudget = Number(localStorage.getItem(STORAGE_KEY_BUDGET)) || null
+    return (
+      <BudgetSetup
+        onSet={setBudget}
+        onCancel={previousBudget ? () => setBudget(previousBudget) : null}
+      />
+    )
   }
 
   return (

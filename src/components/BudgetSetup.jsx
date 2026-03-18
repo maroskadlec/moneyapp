@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import styles from './BudgetSetup.module.css'
 
-export default function BudgetSetup({ onSet }) {
+export default function BudgetSetup({ onSet, onCancel }) {
   const [value, setValue] = useState('')
 
   const handleSubmit = (e) => {
@@ -14,7 +14,12 @@ export default function BudgetSetup({ onSet }) {
   return (
     <div className={styles.wrap}>
       <div className={styles.inner}>
-        <div className={styles.appName}>MoneyApp</div>
+        <div className={styles.top}>
+          <div className={styles.appName}>MoneyApp</div>
+          {onCancel && (
+            <button className={styles.cancelBtn} onClick={onCancel}>← zpět</button>
+          )}
+        </div>
         <h1 className={styles.heading}>Nastavení budgetu</h1>
         <p className={styles.sub}>
           Zadej celkový budget pro aktuální kvartál<br />
