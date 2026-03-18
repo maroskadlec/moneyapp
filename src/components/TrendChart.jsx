@@ -68,9 +68,9 @@ export default function TrendChart({ budget, expenses }) {
         <LineChart data={data} margin={{ top: 8, right: 16, bottom: 0, left: 0 }}>
           <XAxis
             dataKey="label"
-            tick={{ fontSize: 10, fontFamily: 'Courier New', fill: '#9e9b96' }}
+            tick={{ fontSize: 10, fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif', fill: '#3c3c4399' }}
             tickLine={false}
-            axisLine={{ stroke: '#c4c0b8' }}
+            axisLine={{ stroke: 'rgba(0,0,0,0.08)' }}
             interval={0}
           />
           <YAxis hide />
@@ -79,8 +79,8 @@ export default function TrendChart({ budget, expenses }) {
             type="monotone"
             dataKey="ideal"
             name="ideal"
-            stroke="#c4c0b8"
-            strokeWidth={1}
+            stroke="rgba(0,0,0,0.15)"
+            strokeWidth={1.5}
             dot={false}
             strokeDasharray="4 3"
           />
@@ -88,8 +88,8 @@ export default function TrendChart({ budget, expenses }) {
             type="monotone"
             dataKey="actual"
             name="actual"
-            stroke="#1a1917"
-            strokeWidth={1.5}
+            stroke="#007aff"
+            strokeWidth={2}
             dot={false}
             connectNulls={false}
           />
